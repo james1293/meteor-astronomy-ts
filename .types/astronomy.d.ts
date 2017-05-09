@@ -66,6 +66,7 @@ declare module 'meteor/jagi:astronomy' {
         isParentOf(Class: Class): boolean;
         isChildOf(Class: Class): boolean;
         find(selectorOrWhateverMongoNormallyTakes: any): any;
+        findOne(selectorOrWhateverMongoNormallyTakes: any): any;
     }
 
     export interface Class extends ClassStatic, ReservedWords {
