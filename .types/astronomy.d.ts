@@ -96,5 +96,10 @@ declare module 'meteor/jagi:astronomy' {
     interface ValidationErrorStatic {
         is(err:any): boolean;
     }
-    export let ValidationError: ValidationErrorStatic;    
+    export let ValidationError: ValidationErrorStatic;
+
+    interface ValidatorStatic {
+        create(options:object): void;
+    }     
+    export let Validator: ValidatorStatic;
 }
